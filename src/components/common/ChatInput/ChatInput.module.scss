@@ -1,0 +1,51 @@
+@import "/src/styles/functions.module.scss";
+
+.layout {
+  position: relative;
+}
+.plusButtonLayout {
+  display: flex;
+  align-items: center;
+  width: px(36);
+  height: px(36);
+  border-radius: px(20);
+  padding: 0 px(5);
+  background-color: var(--secondary-cool-gray-050);
+  cursor: pointer;
+}
+
+.bottomButtons {
+  display: flex;
+  align-items: center;
+  gap: px(8);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 px(8) px(8) px(8);
+}
+
+.buttonLayout {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.letterCaseIcon,
+.atIcon,
+.emojiButton {
+  padding: px(7);
+  cursor: pointer;
+}
+
+.sendButton {
+  margin-left: auto;
+  padding: px(7);
+  cursor: pointer;
+  width: px(36);
+  height: px(36);
+  display: flex;
+  align-items: center;
+  border-radius: px(20);
+  background-color: var(--secondary-cool-gray-050);
+}

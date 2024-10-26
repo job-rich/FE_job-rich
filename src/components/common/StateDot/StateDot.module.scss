@@ -1,0 +1,91 @@
+@import "@/styles/functions.module.scss";
+
+@mixin position-bottom-right($bottom: px(0), $right: px(0)) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+@mixin group($width: px(8), $height: px(8)) {
+  width: $width;
+  height: $height;
+}
+@mixin user($width: px(10), $height: px(10)) {
+  width: $width;
+  height: $height;
+}
+@mixin mini($width: px(6), $height: px(6)) {
+  width: $width;
+  height: $height;
+}
+
+.dot {
+  outline: px(1.5) solid var(--primary-white);
+  border-radius: 50%;
+}
+
+.alarm {
+  width: px(7);
+  height: px(7);
+  background-color: var(--secondary-rose-500);
+  position: absolute;
+  top: px(-2);
+  right: px(-7);
+}
+
+.active {
+  background-color: var(--secondary-green-400);
+  @include position-bottom-right;
+
+  &.group {
+    @include group;
+  }
+
+  &.user {
+    @include user;
+  }
+
+  &.mini {
+    @include mini;
+  }
+}
+
+.inactive {
+  background-color: var(--secondary-red-500);
+  @include position-bottom-right;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--primary-white);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &.group {
+    @include group;
+
+    &::after {
+      width: px(4);
+      height: px(0.7);
+    }
+  }
+
+  &.user {
+    @include user;
+
+    &::after {
+      width: px(5);
+      height: px(1);
+    }
+  }
+
+  &.mini {
+    @include mini;
+
+    &::after {
+      width: px(3);
+      height: px(0.5);
+    }
+  }
+}

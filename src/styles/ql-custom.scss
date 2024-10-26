@@ -1,0 +1,51 @@
+@import "/src/styles/functions.module.scss";
+
+.ql-editor {
+  height: 50px !important;
+  margin-bottom: 55px;
+}
+
+.ql-container.ql-snow {
+  border: 0px !important;
+  border-top: 1px solid #cdd3dd !important;
+  padding: px(8) 0 0 0 !important;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px !important;
+  border-radius: 8px;
+}
+
+.ql-toolbar.ql-snow .ql-fill {
+  fill: var(--secondary-cool-gray-400) !important;
+}
+
+.ql-toolbar.ql-snow .ql-stroke {
+  stroke: var(--secondary-cool-gray-400) !important;
+}
+
+.quill-focused .ql-toolbar.ql-snow .ql-fill {
+  fill: var(--secondary-cool-gray-800) !important;
+}
+
+.quill-focused .ql-toolbar.ql-snow .ql-stroke {
+  stroke: var(--secondary-cool-gray-800) !important;
+}
+
+.ql-editor::before {
+  color: var(--secondary-cool-gray-400) !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 130% !important;
+  height: px(40);
+}
+
+// 포커스된 상태에서 버튼 색상 변경
+.focused .ql-toolbar.ql-snow .ql-fill {
+  fill: red !important;
+}
+
+.focused .ql-toolbar.ql-snow .ql-stroke {
+  stroke: red !important;
+}

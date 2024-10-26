@@ -1,0 +1,11 @@
+@import "@/styles/functions.module.scss";
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  border-radius: px(40) 0px 0px 0px;
+  border-bottom: 1px solid var(--secondary-cool-gray-150);
+  height: px(68);
+  align-items: center;
+  padding: 0 px(16) 0 px(24);
+}

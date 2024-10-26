@@ -1,0 +1,71 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: px(8);
+  width: px(352);
+  height: px(80);
+  padding: px(12);
+  border-radius: 12px;
+  border: 1px solid var(--secondary-cool-gray-150);
+  background-color: var(--primary-white);
+
+  &:hover {
+    border: 1px solid var(--secondary-cool-gray-200);
+
+    .fileHoverButtonWrapper {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: px(40);
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+.fileInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  width: 100%;
+}
+
+.fileName {
+  width: 100%;
+  color: var(--secondary-cool-gray-800);
+  font-size: px(14);
+  font-style: normal;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.description {
+  color: var(--secondary-cool-gray-400);
+  font-size: px(13);
+  font-style: normal;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.fileHoverButtonWrapper {
+  display: none;
+  height: 100%;
+}

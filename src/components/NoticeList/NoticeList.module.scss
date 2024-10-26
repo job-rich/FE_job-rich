@@ -1,0 +1,11 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: px(12);
+  width: 100%;
+  max-height: calc(100dvh - px(294));
+  height: 100%;
+  overflow-y: auto;
+}

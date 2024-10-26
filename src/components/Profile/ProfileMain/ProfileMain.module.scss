@@ -1,0 +1,49 @@
+@import "/src/styles/functions.module.scss";
+
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.flexCol {
+    display: flex;
+}
+
+
+.profile {
+    margin-top: 10px;
+    display: flex;
+    
+}
+
+.profileImg {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 16rem;
+       
+    }
+
+    border-radius: 0.5rem;
+   
+}
+
+.gap {
+    gap: 2.5rem;
+   
+}
+
+.infoContent{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.text{
+    color: var(--cocoa-green);
+    font-weight: bold;
+    font-size: px(20);
+    margin-bottom: px(5);
+}

@@ -1,0 +1,36 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: px(68);
+  padding: 0 px(15) 0 px(24);
+}
+
+.span {
+  color: var(--secondary-cool-gray-800);
+  font-size: px(20);
+  font-weight: 600;
+  line-height: px(26);
+}
+
+.button {
+  width: px(36);
+  height: px(36);
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--secondary-cool-gray-100);
+  }
+}
+
+.icon {
+  width: px(20);
+  height: px(20);
+}

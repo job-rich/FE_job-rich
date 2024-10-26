@@ -1,0 +1,18 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  width: 100%;
+  max-height: calc(100% - px(70));
+  height: calc(100% - px(70));
+  padding-right: px(16);
+  background-color: var(--primary-white);
+}
+
+.mainArea {
+  width: 100%;
+  min-width: px(500);
+  height: 100%;
+  border-top: 1px solid var(--secondary-cool-gray-150);
+  border-right: 1px solid var(--secondary-cool-gray-150);
+  border-left: 1px solid var(--secondary-cool-gray-150);
+}

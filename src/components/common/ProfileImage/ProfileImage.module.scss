@@ -1,0 +1,40 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &.group {
+    width: px(36);
+    height: px(36);
+  }
+
+  &.user {
+    width: px(40);
+    height: px(40);
+  }
+
+  &.mini {
+    width: px(24);
+    height: px(24);
+  }
+}
+
+.svgWrapper {
+  &.group {
+    width: px(36);
+    height: px(36);
+  }
+
+  &.user {
+    width: px(40);
+    height: px(40);
+  }
+
+  &.mini {
+    width: px(24);
+    height: px(24);
+  }
+}

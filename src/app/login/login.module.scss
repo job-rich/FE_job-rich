@@ -1,0 +1,59 @@
+@import "@/styles/functions.module.scss";
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: px(96) px(320) px(502) px(320);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: px(32);
+    width: px(360);
+    min-width: px(360);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: px(24);
+}
+
+.icon {
+    width: px(48);
+    height: px(48);
+    background-color: var(--cocoa-green);
+}
+
+.title {
+    color: var(--secondary-cool-gray-800);
+    font-size: px(36);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: px(4);
+    align-items: center;
+}
+
+.span {
+    color: var(--secondary-cool-gray-600);
+    font-size: px(15);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+    &.link {
+        width: fit-content;
+        color: var(--cocoa-green);
+        cursor: pointer;
+    }
+}

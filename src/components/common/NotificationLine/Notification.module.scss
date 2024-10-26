@@ -1,0 +1,37 @@
+@import "/src/styles/functions.module.scss";
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.label {
+  display: flex;
+  height: px(30);
+  padding: 0 px(16);
+  align-items: center;
+  gap: px(4);
+  border-radius: px(20);
+  border: px(1) solid var(--secondary-cool-gray-100);
+  background-color: var(--primary-white);
+  z-index: 1;
+}
+
+.icon {
+  width: px(16);
+  height: px(16);
+}
+
+.text {
+  font-size: px(13);
+  font-weight: 600;
+  color: var(--secondary-cool-gray-550);
+}
+
+.line {
+  border: px(1) solid var(--secondary-cool-gray-100);
+  width: 100%;
+  height: px(1);
+  position: absolute;
+}

@@ -1,0 +1,33 @@
+@import "/src/styles/functions.module.scss";
+
+.icon {
+  width: px(20);
+  height: px(20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropDown {
+  background-color: var(--secondary-cool-gray-100);
+  border-radius: px(6);
+}
+
+.dropUp,
+.dropDown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: px(4);
+  height: px(36);
+  padding: 0 px(6);
+}
+.label {
+  color: var(--secondary-cool-gray-800);
+  font-size: px(20);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  width: px(76);
+  height: px(26);
+}

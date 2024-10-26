@@ -1,0 +1,13 @@
+@import "@/styles/functions.module.scss";
+
+.layout {
+  display: flex;
+  gap: px(6);
+}
+.label {
+  font-weight: bold;
+}
+
+.icon {
+  width: px(20);
+}

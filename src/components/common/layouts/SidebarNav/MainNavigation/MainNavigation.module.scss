@@ -1,0 +1,47 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: px(71);
+  width: px(71);
+  min-width: px(71);
+  height: 100%;
+  border-right: 1px solid var(--secondary-cool-gray-150);
+  background-color: var(--primary-white);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: px(276);
+  min-height: px(276);
+}
+
+.profileWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: px(20) 0 px(20) 0;
+}
+
+.spacer {
+  padding-top: px(8);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: px(194);
+  min-height: px(194);
+  padding-bottom: px(24);
+}

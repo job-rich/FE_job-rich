@@ -1,0 +1,39 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: px(2);
+  width: px(74);
+  height: px(40);
+  padding: px(4);
+  border: 1px solid var(--secondary-cool-gray-150);
+  border-radius: px(8);
+  background-color: var(--primary-white);
+
+  &.mini {
+    width: px(66);
+    height: px(36);
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: px(32);
+  height: px(32);
+  padding: px(6);
+  border-radius: 6px;
+  cursor: pointer;
+
+  &.mini {
+    width: px(28);
+    height: px(28);
+    padding: px(5);
+  }
+
+  &:hover {
+    background-color: var(--secondary-cool-gray-050);
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../../../styles/functions.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  height: 100vh; /* 화면 전체 높이를 사용 */
+  padding: px(20); /* 여유 공간을 위해 패딩 추가 */
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: px(200);
+  margin-left: px(10);
+  margin-bottom: 5vh;
+}
+.formLayout {
+  flex-direction: column;
+  display: flex;
+  justify-content: center; /* form을 수직 중앙에 배치 */
+  align-items: center; /* form을 수평 중앙에 배치 */
+  flex-grow: 1; /* 버튼과 함께 공간을 차지하도록 설정 */
+  margin-top: 5vh;
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: px(320);
+  height: px(56);
+  background-color: #7300ff;
+  border-radius: px(10);
+  position: absolute;
+  bottom: px(90); /* 화면 맨 아래에서 20px 위에 배치 */
+}
+
+.loginForm {
+  width: px(320);
+  height: px(56);
+  border-radius: px(15);
+  box-shadow: px(0) px(6) px(6) px(0) #cacaca;
+  padding: px(10);
+
+  &:focus {
+    outline: none; /* 포커스 시 기본 아웃라인 제거 */
+  }
+}
+
+.login {
+  font-size: px(24);
+  font-weight: bold;
+  color: white;
+}

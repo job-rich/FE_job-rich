@@ -1,0 +1,56 @@
+@import "@/styles/functions.module.scss";
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-opacity-20);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    min-width: px(400);
+    height: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 16px;
+    background-color: var(--primary-white);
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: px(72);
+    padding: px(16) px(16) px(16) px(24);
+}
+
+.title {
+    color: var(--secondary-cool-gray-800);
+    font-size: px(20);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.closeIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: px(40);
+    height: px(40);
+    padding: px(8);
+    cursor: pointer;
+}
+
+.body {
+    width: 100%;
+    padding: 0 px(24) px(24) px(24);
+}

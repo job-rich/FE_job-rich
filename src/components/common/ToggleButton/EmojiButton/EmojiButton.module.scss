@@ -1,0 +1,50 @@
+@import "/src/styles/functions.module.scss";
+
+.emojiSelectButton {
+  border-radius: 20px;
+  border: 1px solid var(--secondary-cool-gray-200);
+  display: flex;
+  height: px(24);
+  padding: px(0) px(6);
+  align-items: center;
+  gap: px(4);
+  cursor: pointer;
+  width: px(32);
+}
+
+.emojiSelectButtonOpen {
+  background-color: var(--cocoa-green);
+}
+
+.emojisContainer {
+  display: flex;
+  gap: px(4);
+  cursor: pointer;
+  position: relative;
+}
+
+.emojiPicker {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: px(1) solid var(--secondary-cool-gray-150);
+  background-color: var(--primary-white);
+  padding: px(4);
+  border-radius: px(8);
+  box-shadow: 0 px(2) px(10) 0 var(--drop-menu-shadow);
+  margin-top: px(5);
+}
+
+.emojiItem {
+  width: px(36);
+  height: px(36);
+  padding: px(6);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: px(24);
+}

@@ -1,0 +1,18 @@
+@import "/src/styles/functions.module.scss";
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: px(456);
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+.navLayout {
+  display: flex;
+}

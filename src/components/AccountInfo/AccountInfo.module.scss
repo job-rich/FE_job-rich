@@ -1,0 +1,24 @@
+@import "@/styles/functions.module.scss";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: px(64);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: px(193);
+}
+
+.icon {
+  cursor: pointer;
+}

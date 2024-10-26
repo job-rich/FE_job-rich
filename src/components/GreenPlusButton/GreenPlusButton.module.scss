@@ -1,0 +1,12 @@
+@import "@/styles/functions.module.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: px(40);
+  height: px(40);
+  border-radius: 20px;
+  background-color: var(--cocoa-green);
+  cursor: pointer;
+}

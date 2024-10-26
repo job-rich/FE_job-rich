@@ -1,0 +1,16 @@
+@import "/src/styles/functions.module.scss";
+
+
+.hello{
+    font-size: px(50);
+    font-weight: bold;
+}
+
+.title{
+    font-size: px(40);
+
+}
+
+.purpleText{
+    color: var(--cocoa-green);
+}

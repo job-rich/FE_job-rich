@@ -1,0 +1,59 @@
+@import "@/styles/colors.scss";
+@import "@/styles/functions.module.scss";
+@import "@/styles/ql-custom.scss";
+
+/* CSS 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 기본 폰트 및 색상 설정 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-y: overlay;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100dvh;
+  min-height: px(520);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - px(332));
+  min-width: px(456);
+}
+
+/* 전역 변수 정의 */
+:root {
+  --font-size-base: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  outline: none;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
+
+  &:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
+  }
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: transparent;
+}

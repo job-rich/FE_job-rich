@@ -1,0 +1,23 @@
+@import "@/styles/functions.module.scss";
+
+.dropDownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: px(229);
+  height: px(36);
+  padding: px(8) px(4);
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  gap: 6px;
+  width: px(20);
+  height: px(20);
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+}
