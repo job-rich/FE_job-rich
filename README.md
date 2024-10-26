@@ -1,4 +1,4 @@
-<h1 align="center">🙌 **이슈관리 프로젝트** 🙌</h1>
+<h1 align="center">🙌 **이슈관리 프로젝트 FE** 🙌</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/-NextJS-05122A?style=flat&logo=Next.js&logoColor=white"/>
