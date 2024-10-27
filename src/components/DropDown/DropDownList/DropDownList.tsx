@@ -1,4 +1,9 @@
-import { BoardIcon, PlusIcon, SpeechBubble } from "@/constants/icon";
+import {
+  BoardIcon,
+  CircleCheckIcon,
+  PlusIcon,
+  SpeechBubble,
+} from "@/constants/icon";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -14,7 +19,6 @@ interface DropDownMenuProps {
   onItemClick: (item: Item) => void;
   roomType: "board" | "normal";
   currentTab: string;
-  workspace: string;
   currentUserTab: string;
 }
 
@@ -39,9 +43,7 @@ function DropDownItem({
       onClick={onClick}
     >
       <dd className={styles.itemLayout}>
-        <div className={styles.listIcon}>
-          {roomType === "normal" ? null : <BoardIcon />}
-        </div>
+        <div className={styles.listIcon}>.</div>
         <div className={styles.textLayout}>
           <div className={styles.itemText}>{label}</div>
         </div>
@@ -56,7 +58,6 @@ export default function DropDownList({
   roomType,
   currentTab,
   currentUserTab,
-  workspace,
 }: DropDownMenuProps) {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
 

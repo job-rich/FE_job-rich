@@ -36,8 +36,7 @@
   height: px(56);
   background-color: #7300ff;
   border-radius: px(10);
-  position: absolute;
-  bottom: px(90); /* 화면 맨 아래에서 20px 위에 배치 */
+  margin-top: px(10);
 }
 
 .loginForm {

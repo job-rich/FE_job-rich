@@ -11,7 +11,6 @@ import styles from "./DropDown.module.scss";
 interface DropDownProps {
   label: "프로젝트" | "대화방";
   currentTab: string;
-  workspace: string;
   currentUserTab: string;
 }
 
@@ -29,7 +28,6 @@ const test_items: Item[] = [
 export default function DropDown({
   label,
   currentTab,
-  workspace,
   currentUserTab,
 }: DropDownProps) {
   const [isOpen, setIsOpen] = useState(true);
@@ -45,14 +43,6 @@ export default function DropDown({
     console.log(`Selected item: ${item.label}`);
   };
 
-  const handleDotButtonClick = () => {
-    console.log("옵션메뉴");
-  };
-
-  const handlePlusClick = () => {
-    console.log("plus 버튼");
-  };
-
   return (
     <div className={styles.layout}>
       <div>
@@ -64,9 +54,6 @@ export default function DropDown({
               <CloseArrow label={label} />
             )}
           </div>
-          <div className={styles.button}>
-            {label == "대화방" ? <PlusButton onClick={handlePlusClick} /> : ""}
-          </div>
         </div>
         {isOpen ? (
           <DropDownList
@@ -75,7 +62,6 @@ export default function DropDown({
             roomType={"board"}
             currentTab={currentTab}
             currentUserTab={currentUserTab}
-            workspace={workspace}
           />
         ) : (
           " "

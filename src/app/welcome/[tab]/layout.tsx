@@ -1,4 +1,3 @@
-import Header from "@/components/common/layouts/Header/Header";
 import MainArea from "@/components/common/layouts/MainArea/MainArea";
 import SubNavigation from "@/components/common/layouts/SidebarNav/SubNavigation/SubNavigation";
 import { ReactNode } from "react";

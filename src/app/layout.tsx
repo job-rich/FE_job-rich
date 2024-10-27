@@ -1,15 +1,18 @@
 import "@/app/globals.scss";
+import AuthContext from "@/context/AuthContext";
 
 import { Providers } from "@/redux/provider";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-
-import styles from "./layout.module.scss";
+import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   title: "rich",
   description: "",
 };
+
+interface Props {
+  children: React.ReactNode;
+}
 
 export default function RootLayout({
   children,
@@ -19,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>
-          <div>{children}</div>
-        </Providers>
+        <AuthContext>
+          <Providers>
+            <div>{children}</div>
+          </Providers>
+        </AuthContext>
       </body>
     </html>
   );
