@@ -21,8 +21,10 @@
 
 ## 라우팅 폴더 구조
 
-![image](https://github.com/user-attachments/assets/b704922f-6099-427e-85b0-c81fb8d5b1b7)
-![image](https://github.com/user-attachments/assets/a446584b-53df-4ad0-b5de-e0260d31b62b)
+![image](https://github.com/user-attachments/assets/05fceb86-66b7-4328-a991-50883ae817b1)
+
+![image](https://github.com/user-attachments/assets/57551ba0-f6fd-448b-aac1-33fd83facdad)
+
 
 
 
