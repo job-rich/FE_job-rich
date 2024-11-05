@@ -17,14 +17,5 @@ export default function LoginButton() {
     }
   }, [session, router]);
 
-  if (session) {
-    return (
-      <div>
-        <p>Welcome, {session.user?.name}</p>
-        <button onClick={() => signOut()}>Logout</button>
-      </div>
-    );
-  }
-
   return <button onClick={() => signIn("google")}>Login with Google</button>;
 }
