@@ -3,7 +3,6 @@ import AuthContext from "@/context/AuthContext";
 
 import { Providers } from "@/redux/provider";
 import type { Metadata } from "next";
-import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   title: "rich",
